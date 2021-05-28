@@ -1,0 +1,132 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wrap{padding:15px; font-family: 'Noto sans KR', sans-serif; font-weight: 500; min-width: 100%;}
+.wrap > div{padding:3px; border:1px solid rgba(0,0,0,.125);}
+.wrap > div + div{margin-top:20px}
+.wrap input[type=text], .wrap input[type=number]{padding-left:5px !important; font-size:15px; width:100%; height:26px; border-radius:0; }
+.wrap input[type=checkbox], .wrap input[type=radio]{margin-right:5px; vertical-align: middle !important;}
+.wrap select{border-radius:0; border:1px solid rgba(0,0,0,.125); height:26px; width:100%}
+.wrap table th{padding:5px 10px; border-top:1px solid #1c6aa3; border-bottom: 1px solid rgba(0,0,0,.125); background:#f5f6fa; color:#182f4e}
+.wrap table tr td{padding:5px; font-size:15px; border-bottom:1px solid rgba(0,0,0,.125);}
+.wrap table .tab_bg{background:#f8f8f8; border-left: 1px solid rgba(0,0,0,.125); border-right: 1px solid rgba(0,0,0,.125);}
+.wrap table .bl0{border-left:0;}
+.wrap table .textR{text-align: right !important;}
+.wrap button{font-size:14px; border-radius:5px; vertical-align:top; color:#fff; padding:2px 10px}
+.wrap button.btn1{padding:1px 7px !important}
+.wrap button.btn2{padding:5px 15px !important}
+.wrap button.blue{background:#4c9ece; transition:all 0.5s}
+.wrap button.blue:hover{background:#1c6aa3;}
+.wrap button.orange{background:#f1b869; transition:all 0.5s}
+.wrap button.orange:hover{background:#c16c43;}
+.wrap button.gray{background:#929292; transition:all 0.5s}
+.wrap button.btn_arrow{padding:7px 10px !important; }
+.wrap select.form-control:not([size]):not([multiple]){height:26px}
+
+.wrap i{font-size:20px; vertical-align: middle; color:#fff;}
+.wrap .con2{height:auto;}
+.borderL{border-left:1px solid rgba(0,0,0,.125)}
+.borderR{border-right:1px solid rgba(0,0,0,.125)}
+.borderT{border-top:1px solid rgba(0,0,0,.125)}
+.borderB{border-bottom:1px solid rgba(0,0,0,.125)}
+.borderB_0{border-bottom:0 !important;}
+.wrap .con5 .left{float:left; width:50%}
+.wrap .con5 .left70{float:left; width:70%}
+.wrap .con5 .right{float:right; width:50%; }
+.wrap .con5 .right60{float:right; width:60%; }
+.wrap .con5 .right30{float:right; width:30%; }
+.wrap .con2 table td span + span{margin-left:10px}
+
+.width1{width:1% !important}
+.width2{width:2% !important}
+.width3{width:3% !important}
+.width4{width:4% !important}
+.width5{width:5% !important}
+.width6{width:6% !important}
+.width7{width:7% !important}
+.width8{width:8% !important}
+.width9{width:9% !important}
+.width10{width:10% !important}
+.width15{width:15% !important}
+.width18{width:18% !important}
+.width17{width:17% !important}
+.width20{width:20% !important}
+.width25{width:25% !important}
+.width30{width:30% !important}
+.width33{width:33% !important}
+.width35{width:35% !important}
+.width39{width:39% !important}
+.width40{width:40% !important}
+.width45{width:45% !important}
+.width50{width:50% !important}
+.width55{width:55% !important}
+.width60{width:60% !important}
+.width65{width:65% !important}
+.width69{width:69% !important}
+.width70{width:70% !important}
+.width75{width:75% !important}
+.width80{width:80% !important}
+.width85{width:85% !important}
+.width90{width:90% !important}
+.width95{width:95% !important}
+.width100{width:100% !important}
+span.width1{display:inline-block; vertical-align:middle; width:1% !important;}
+span.width2{display:inline-block; vertical-align:middle; width:2% !important;}
+span.width3{display:inline-block; vertical-align:middle; width:3% !important;}
+span.width4{display:inline-block; vertical-align:middle; width:4% !important;}
+span.width5{display:inline-block; vertical-align:middle; width:5% !important;}
+span.width6{display:inline-block; vertical-align:middle; width:6% !important;}
+span.width7{display:inline-block; vertical-align:middle; width:7% !important;}
+span.width8{display:inline-block; vertical-align:middle; width:8% !important;}
+span.width9{display:inline-block; vertical-align:middle; width:9% !important;}
+span.width10{display:inline-block; vertical-align:middle; width:10% !important;}
+span.width15{display:inline-block; vertical-align:middle; width:15% !important;}
+span.width19{display:inline-block; vertical-align:middle; width:19% !important;}
+span.width20{display:inline-block; vertical-align:middle; width:20% !important;}
+span.width24{display:inline-block; vertical-align:middle; width:24% !important;}
+span.width30{display:inline-block; vertical-align:middle; width:30% !important;}
+span.width35{display:inline-block; vertical-align:middle; width:35% !important;}
+span.width37{display:inline-block; vertical-align:middle; width:37% !important;}
+span.width40{display:inline-block; vertical-align:middle; width:40% !important;}
+span.width45{display:inline-block; vertical-align:middle; width:45% !important;}
+span.width50{display:inline-block; vertical-align:middle; width:50% !important;}
+span.width60{display:inline-block; vertical-align:middle; width:60% !important;}
+span.width62{display:inline-block; vertical-align:middle; width:62% !important;}
+span.width65{display:inline-block; vertical-align:middle; width:65% !important;}
+span.width70{display:inline-block; vertical-align:middle; width:70% !important;}
+span.width75{display:inline-block; vertical-align:middle; width:75% !important;}
+span.width80{display:inline-block; vertical-align:middle; width:80% !important;}
+span.width85{display:inline-block; vertical-align:middle; width:85% !important;}
+span.width90{display:inline-block; vertical-align:middle; width:90% !important;}
+span.width95{display:inline-block; vertical-align:middle; width:95% !important;}
+span.width100{display:inline-block; vertical-align:middle; width:100% !important;}
+
+
+@media only screen and (max-width: 600px) {
+   
+  }
+@media only screen and (min-width: 600px) {
+   
+}
+ @media only screen and (min-width: 768px) {
+   
+}
+@media only screen and (min-width: 992px) {
+   
+}
+@media only screen and (min-width: 1200px) {
+    
+} 
+@media only screen and (min-width: 1900px) {
+   
+} 

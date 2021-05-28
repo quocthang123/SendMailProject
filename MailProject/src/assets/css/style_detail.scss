@@ -1,0 +1,217 @@
+body {
+  color: #929292;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+// ==========TOP MENU========
+.top-menu {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #6497b1;
+
+  a {
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  .dropdown-menu a {
+    color: #929292 !important;
+  }
+
+  .logo {
+    width: 250px;
+    height: 100%;
+    border-right: solid 1px #ffffff;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+
+    h3 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .top-right-menu {
+    position: relative;
+  }
+
+  .top-menu-main {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 1.15rem;
+    height: 55px;
+
+    a {
+      padding-left: 10px;
+    }
+
+    a+a::before {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+      margin-right: 10px;
+    }
+
+  }
+
+  .top-menu-scrum {
+    border-top: solid 1px #ffffff;
+    height: 25px;
+    color: #fff !important;
+    display: flex;
+
+    .left {
+      padding-left: 30px;
+      width: 50%;
+    }
+
+    .right {
+      text-align: right;
+      padding-right: 30px;
+      width: 50%;
+
+      i {
+        padding-right: 10px;
+      }
+    }
+  }
+
+}
+
+// ==========END TOP MENU========
+
+.content {
+  display: flex;
+}
+
+// ==========Start LEFT MENU========
+.left_menu {
+  width: 250px !important;
+  background-color: azure !important;
+  color: #777;
+  border-right: solid 1px #C0C0C0;
+
+  ul {
+    padding-left: 0;
+
+    h5 {
+      padding: 10px;
+    }
+
+    li {
+
+      a {
+        display: block;
+        position: relative;
+      }
+
+      .dropdown-toggle::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+      }
+    }
+
+    .parent-li a {
+      padding: 10px 10px;
+      display: block;
+      border-bottom: solid 1px #fff;
+    }
+
+    .list-unstyled li a {
+      display: block;
+      padding: 10px 25px;
+    }
+  }
+
+  .parent-li:hover>a {
+
+    background-color: #b3cde0;
+
+  }
+
+  .list-unstyled li:hover {
+    background-color: #b3cde0;
+  }
+
+  .parent-li>a.selectedMenu {
+
+    background-color: #6497b1;
+    color: #fff;
+  }
+
+  .list-unstyled li a.selectedMenu {
+    background-color: #6497b1;
+    color: #fff;
+  }
+
+  a {
+    color: #777;
+  }
+
+  a:hover {
+    color: #1E90FF
+  }
+
+  .accordion {
+    border-top: solid 1px #C0C0C0;
+  }
+}
+
+// ==========end LEFT MENU========
+
+// ==========Start Content========
+.required::after{
+    content: '*';
+    color: red;
+}
+.wrap .mr_5{
+    margin-right: 5px;
+}
+.wrap .div-tb{
+    width: 100%;
+}
+.wrap table.tb-design{
+    width: 100%;
+}
+
+.wrap table.tb-design td{
+    border-left: solid 1px rgba(0,0,0,.125);
+}
+.wrap table.tb-design td.bl0{
+    border-left: none;
+}
+.wrap table.tb-design td span.tb-label{
+    font-weight: bold;
+}
+.wrap table.tb-design td span.tb-des{
+    font-style: italic;
+}
+
+.wrap div.div-button{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+        text-align: right !important;
+    }
+}
+// ==========end Content========
