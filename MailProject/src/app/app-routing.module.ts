@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'user-management/create-request', component: CreateUserComponent },
   { path: 'user-management/user-assignment', component: UserAssignmentComponent },
+  //{ path: 'user-management/user-assignment', component: UserAssignmentComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 {
        "leftMenu": {
         "User Management": "User Management",
-        "Tempalte Management": "Tempalte Management",
+        "Template Management": "Template Management",
         "Mail Management": "Mail Management",
         "Send Mail": "Send Mail",
         "Manage attachments": "Manage attachments",
@@ -9,8 +9,8 @@
         "Assignment": "Assignment",
         "Request Approval": "Request Approval",
         "Search": "Search",
-        "Search Tempalte": "Search Tempalte ",
-        "Create Tempalte": "Create Tempalte",
+        "Search Template": "Search Template ",
+        "Create Template": "Create Template",
         "Search Mail": "Search Mail",
         "Blocked Mails": "Blocked Mails"
     },
@@ -22,7 +22,8 @@
     "Email":"Email",
     "Role":"Role",
     "Create":"Create",
-    "Reset":"Reset"
-
+    "Reset":"Reset",
+    "Assign Request": "Assign Request",
+    "Search": "Search"
     
 }
