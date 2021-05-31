@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CreateUserComponent } from './page/create-user/create-user.component';
 import { UserAssignmentComponent } from './page/user-assignment/user-assignment.component';
 import { HomeComponent } from './page/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -22,11 +23,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     CreateUserComponent,
     UserAssignmentComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -38,8 +41,9 @@ export function HttpLoaderFactory(http: HttpClient) {
       defaultLanguage: 'en'
     })
   ],
+  exports:[TranslateModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
 

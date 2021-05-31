@@ -30,8 +30,18 @@ export class AppComponent implements OnInit {
   menuLeves2: Array<Menu> = [];
   menuLevel1Name:any ;
   menuLevel2Name:any;
+  currentLanguage:any = "English";
 
   changeLanguage(language: string): void {
+    if(language=='vi'){
+      this.currentLanguage = "Tiếng Việt"
+    } else  if(language=='ko'){
+      this.currentLanguage = "Korean"
+    }
+    else{
+      this.currentLanguage = "English"
+    }
+    
     this.translateService.use(language);
   }
   public ngOnInit(): void {
@@ -46,7 +56,7 @@ export class AppComponent implements OnInit {
     this.menuLeves2 = menuLeves2;
 
     for (const menu of menuLeves1) {
-      menu.childsMenu = menuLeves2.filter((value, index, array) => {return value.parentMenu === menu.menuId });
+      menu.childsMenu = menuLeves2.filter((value, index, array) => { console.log(menuLeves1);return value.parentMenu === menu.menuId });
     }
     console.log(menuLeves1);
     this.menus = menuLeves1;

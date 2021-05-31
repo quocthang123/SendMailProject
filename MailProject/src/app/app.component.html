@@ -13,13 +13,13 @@
       <a>Doccument</a>
       <a>Event</a>
       <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-        id="language-menu">Language</a>
+        id="language-menu">Language<i style="font-size: 12px;">({{currentLanguage}})</i></a>
       <div class="dropdown-menu" aria-labelledby="language-menu">
-        <a class="dropdown-item" href="#" (click)="changeLanguage('en')">English</a>
+        <a class="dropdown-item"  (click)="changeLanguage('en')">English</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" (click)="changeLanguage('ko')">Korea</a>
+        <a class="dropdown-item"  (click)="changeLanguage('ko')">Korea</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" (click)="changeLanguage('vi')">Tiếng Việt</a>
+        <a class="dropdown-item" (click)="changeLanguage('vi')">Tiếng Việt</a>
       </div>
     </div>
     <div class="top-menu-scrum">

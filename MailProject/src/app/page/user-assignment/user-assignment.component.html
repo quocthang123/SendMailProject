@@ -1,82 +1,314 @@
 <div class="wrap">
   <div class="header">
-    <h4>{{'Assignment'|translate}}</h4>
+    <h4>{{'Assign Request'|translate}}</h4>
   </div>
-  <div class="content">
-    <table class="tb-design">
-      <colgroup>
-        <col width='10%'>
-        <col width='25%'>
-        <col width='15%'>
-        <col width='10%'>
-        <col width='25%'>
-        <col width='15%'>
-      </colgroup>
-      <thead>
+  <div class="contentapp">
+    <div class="width100">
+      <table class="tb-design">
+        <colgroup>
+          <col width='15%'>
+          <col width='35%'>
+          <col width='15%'>
+          <col width='35%'>
+        </colgroup>
+        <thead>
+          <tr>
+            <th colspan="2">
+              {{'Search'|translate}}
+            </th>
+            <th colspan="2" class="text-right">
+              <input type="button" class="btn btn-primary mr_5" value="{{'Search'|translate}}">
+            </th>
+          </tr>
 
-      </thead>
-      <tbody>
-        <tr>
-          <td class="bl0">
-            <span class="tb-label">{{'First Name'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'First Name'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: Beckham</span>
-          </td>
-          <td>
-            <span class="tb-label">{{'Last Name'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'Last Name'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: David</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="bl0">
-            <span class="tb-label"> {{'User Name'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'User Name'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: DavidBeckham</span>
-          </td>
-          <td>
-            <span class="tb-label"> {{'Password'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'Password'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: Abc123!@#</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="bl0">
-            <span class="tb-label">{{'Email'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'Email'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: abc@gmail.com</span>
-          </td>
-          <td>
-            <span class="tb-label">{{'Role'|translate}}</span>
-          </td>
-          <td>
-            <input type="text" class="form-control" placeholder="{{'Role'|translate}}">
-          </td>
-          <td class="bl0">
-            <span class="tb-des">Ex: admin/manager/user/</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'First Name'|translate}}/{{'Last Name'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'First Name'|translate}}/{{'Last Name'|translate}}"
+                name="search_name">
+            </td>
+            <td>
+              <span class="tb-label">{{'User Name'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'User Name'|translate}}" name="search_username">
+            </td>
+
+          </tr>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'Email'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Email'|translate}}" name="search_email">
+            </td>
+            <td>
+              <span class="tb-label">{{'Role'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Role'|translate}}" name="search_role">
+            </td>
+
+          </tr>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'Sender'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Sender'|translate}}" name="search_user">
+            </td>
+            <td>
+              <span class="tb-label">{{'Request Date'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Request Date'|translate}}"
+                name="search_requestDate" [(ngModel)]="requestDate" [ngModelOptions]="{standalone: true}">
+              
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-wrapper-scroll-y my-custom-scrollbar width100" style="margin-top: 20px; overflow-x:auto">
+      <table class="table table-hover">
+        <colgroup>
+          <col width='5%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+          <col width='15%'>
+
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="form-content">
+      <table class="tb-design">
+        <colgroup>
+          <col width='15%'>
+          <col width='35%'>
+          <col width='15%'>
+          <col width='35%'>
+        </colgroup>
+        <thead>
+          <tr>
+            <th colspan="4">
+              {{'Assign Request'|translate}}
+            </th>
+
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'First Name'|translate}}/{{'Last Name'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'First Name'|translate}}/{{'Last Name'|translate}}"
+                name="add_name" readonly>
+            </td>
+            <td>
+              <span class="tb-label">{{'User Name'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'User Name'|translate}}" name="add_username"
+                readonly>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'Email'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Email'|translate}}" name="add_email" readonly>
+            </td>
+            <td>
+              <span class="tb-label">{{'Role'|translate}}</span>
+            </td>
+            <td>
+              <input type="text" class="form-control" placeholder="{{'Role'|translate}}" name="add_role" readonly>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="bl0">
+              <span class="tb-label">{{'Manager'|translate}}</span>
+            </td>
+            <td colspan="3">
+              <select name="add_manager">
+                <option value="1">Admin</option>
+                <option value="2">Manager 1</option>
+                <option value="3">User 1</option>
+              </select>
+            </td>
+
+
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- button -->
+    <div class="div-button">
+      <div class="left"></div>
+      <div class="right">
+        <input type="button" class="btn btn-primary mr_5" value="{{'Assign'|translate}}">
+        <input type="button" class="btn btn-secondary mr_5" value="{{'Reset'|translate}}">
+      </div>
+    </div>
   </div>
 </div>

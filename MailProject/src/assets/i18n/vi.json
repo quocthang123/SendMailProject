@@ -1,7 +1,7 @@
 {
     "leftMenu": {
         "User Management": "Quản lý User",
-        "Tempalte Management": "Quản lý Tempalte",
+        "Template Management": "Quản lý Template",
         "Mail Management": "Quản lý Mail",
         "Send Mail": "Gửi Mail",
         "Manage attachments": "Quản lý file đính kèm",
@@ -9,8 +9,8 @@
         "Assignment": "Assignment",
         "Request Approval": "Tạo User",
         "Search": "Tìm kiếm User",
-        "Search Tempalte": "Tìm kiếm Tempalte ",
-        "Create Tempalte": "Tạo Tempalte",
+        "Search Template": "Tìm kiếm Template ",
+        "Create Template": "Tạo Tempalte",
         "Search Mail": "Tìm kiếm Mail",
         "Blocked Mails": "Danh sách mail chặn"
     },
@@ -22,5 +22,11 @@
     "Email":"Email",
     "Role":"Chức vụ",
     "Create":"Tạo",
-    "Reset":"Hủy"
+    "Reset":"Hủy",
+    "Assign Request": "Assign Request",
+    "Assign": "Assign",
+    "Search": "Tìm Kiếm",
+    "Manager": "Người phụ trách",
+    "Sender": "Người tạo request",
+    "Request Date":"Ngày tạo request"
 }
