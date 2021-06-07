@@ -1,0 +1,58 @@
+::ng-deep mat-form-field .mat-form-field-label-wrapper {
+    color: #495057 !important;
+  }
+  
+  ::ng-deep .mat-datepicker-toggle{
+    color:#495057!important;
+  }
+  ::ng-deep .mat-datepicker-input{
+    color:#495057!important;
+    height: 24px!important;
+  }
+  ::ng-deep .mat-datepicker-input::placeholder{
+    color:#495057!important;
+    opacity: 0.78;
+  }
+  ::ng-deep .mat-form-field-ripple{
+  background: purple!important;
+  }
+  ::ng-deep .mat-button-wrapper .mat-datepicker-toggle-default-icon{
+    color: #495057!important;
+  }
+  ::ng-deep .mat-form-field-wrapper .mat-form-field-underline::before {
+    background-color: #495057!important;
+}
+::ng-deep .mat-form-field-underline ::before {
+  background-color: #495057!important;
+}
+
+::ng-deep  .mat-form-field-flex{
+  padding: 0px 5px!important;
+}
+::ng-deep .mat-form-field-infix{
+  border: 0!important;
+  padding: 0!important;
+}
+::ng-deep .mat-datepicker-toggle:first-child .mat-focus-indicator.mat-icon-button.mat-button-base {
+  height: 24px!important;
+  width: 24px!important;
+  padding: 0!important;
+}
+::ng-deep .mat-calendar-previous-button ,::ng-deep .mat-calendar-next-button {
+  height: 40px!important;
+  width: 40px!important;
+  padding: 0!important;
+}
+
+
+::ng-deep .mat-form-field-suffix{
+  height: 24px!important;
+  width: 24px!important;
+  padding: 0!important;
+  // top:-4px!important;
+}
+
+::ng-deep .mat-form-field{
+  line-height: 24px!important;
+
+}

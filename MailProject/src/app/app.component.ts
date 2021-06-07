@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
     this.menuLeves2 = menuLeves2;
 
     for (const menu of menuLeves1) {
-      menu.childsMenu = menuLeves2.filter((value, index, array) => { console.log(menuLeves1);return value.parentMenu === menu.menuId });
+      menu.childsMenu = menuLeves2.filter((value, index, array) => { return value.parentMenu === menu.menuId });
     }
     console.log(menuLeves1);
     this.menus = menuLeves1;

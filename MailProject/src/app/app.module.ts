@@ -11,7 +11,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CreateUserComponent } from './page/create-user/create-user.component';
 import { UserAssignmentComponent } from './page/user-assignment/user-assignment.component';
 import { HomeComponent } from './page/home/home.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider';
+import {MaterialModule} from '../app/material-module';
+import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatNativeDateModule} from '@angular/material/core';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -39,12 +45,22 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       defaultLanguage: 'en'
-    })
+    }),
+    ReactiveFormsModule,
+    MatSliderModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
   ],
   exports:[TranslateModule],
-  providers: [],
+  providers: [
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+  ],
   bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
 
-
+// platformBrowserDynamic().bootstrapModule(AppModule)
+//   .catch(err => console.error(err));
